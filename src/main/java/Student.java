@@ -1,5 +1,5 @@
 /**
- * Student subclass.
+ * The Student subclass.
  */
 
 public class Student extends Person{
@@ -25,7 +25,7 @@ public class Student extends Person{
      * The GPA of the student enrolled.
      * @param gpa The GPA score.
      */
-    public void setGpa(double gpa) {
+    private void setGpa(double gpa) {
         this.gpa = gpa;
     }
 
@@ -33,7 +33,7 @@ public class Student extends Person{
      * Gets the students GPA score.
      * @return The Students GPA.
      */
-    public double getGpa() {
+    private double getGpa() {
         return gpa;
     }
 
@@ -41,7 +41,7 @@ public class Student extends Person{
      * Sets the students ID number.
      * @param idNumber The ID number of the Student.
      */
-    public void setIdNumber(String idNumber) {
+    private void setIdNumber(String idNumber) {
         IdNumber = idNumber;
     }
 
@@ -49,7 +49,7 @@ public class Student extends Person{
      * Gets the ID number of the Student.
      * @return The ID number of the student.
      */
-    public String getIdNumber() {
+    private String getIdNumber() {
         return IdNumber;
     }
 }

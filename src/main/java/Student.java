@@ -25,7 +25,7 @@ public class Student extends Person{
      * The GPA of the student enrolled.
      * @param gpa The GPA score.
      */
-    private void setGpa(double gpa) {
+    public void setGpa(double gpa) {
         this.gpa = gpa;
     }
 
@@ -33,7 +33,7 @@ public class Student extends Person{
      * Gets the students GPA score.
      * @return The Students GPA.
      */
-    private double getGpa() {
+    public double getGpa() {
         return gpa;
     }
 
@@ -41,7 +41,7 @@ public class Student extends Person{
      * Sets the students ID number.
      * @param idNumber The ID number of the Student.
      */
-    private void setIdNumber(String idNumber) {
+    public void setIdNumber(String idNumber) {
         IdNumber = idNumber;
     }
 
@@ -49,7 +49,7 @@ public class Student extends Person{
      * Gets the ID number of the Student.
      * @return The ID number of the student.
      */
-    private String getIdNumber() {
+    public String getIdNumber() {
         return IdNumber;
     }
 }

@@ -3,8 +3,8 @@
  */
 
 public class Student extends Person{
-    protected String myIdNumber;
-    protected double myGPA;
+    protected String IdNumber;
+    protected double gpa;
 
     /**
      * The Student constructor extended by Person superclass.
@@ -17,7 +17,39 @@ public class Student extends Person{
      */
     public Student(String name, int age, String gender, String IdNum, double gpa) {
         super(name, age, gender);
-        this.myIdNumber = IdNum;
-        this.myGPA = gpa;
+        this.IdNumber = IdNum;
+        this.gpa = gpa;
+    }
+
+    /**
+     * The GPA of the student enrolled.
+     * @param gpa The GPA score.
+     */
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
+    }
+
+    /**
+     * Gets the students GPA score.
+     * @return The Students GPA.
+     */
+    public double getGpa() {
+        return gpa;
+    }
+
+    /**
+     * Sets the students ID number.
+     * @param idNumber The ID number of the Student.
+     */
+    public void setIdNumber(String idNumber) {
+        IdNumber = idNumber;
+    }
+
+    /**
+     * Gets the ID number of the Student.
+     * @return The ID number of the student.
+     */
+    public String getIdNumber() {
+        return IdNumber;
     }
 }

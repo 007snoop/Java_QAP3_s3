@@ -61,6 +61,11 @@ public class Teacher extends Person{
         return subject;
     }
 
+
+    /**
+     * To String method using super class method
+     * @return The super toString as well as teachers teaching subject and salary.
+     */
     @Override
     public String toString() {
         return (super.toString()

@@ -26,4 +26,48 @@ public class CollegeStudent extends Student{
         this.major = "undeclared";
         this.year = 0;
     }
+
+    /**
+     * Sets the students major enrollment.
+     * @param major The main subject for student.
+     */
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    /**
+     * Denotes whether student is a freshmen or a sophomore.
+     * @param year 1 = freshmen,
+     *             2 = sophomore
+     */
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    /**
+     * Get the college students major.
+     * @return The major of the student.
+     */
+    public String getMajor() {
+        return major;
+    }
+
+    /**
+     * Returns Freshmen or Sophomore.
+     * @return 1 for freshmen 2 for sophomore.
+     */
+    public int getYear() {
+        return year;
+    }
+
+    /**
+     * To String method using super class method.
+     * @return The super toString as well as Student Major and Student Year.
+     */
+    @Override
+    public String toString() {
+        return (super.toString()
+        + "\nStudent Major: " + getMajor()
+        + "\nStudent Year: " + getYear());
+    }
 }

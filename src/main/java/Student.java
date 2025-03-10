@@ -53,6 +53,10 @@ public class Student extends Person{
         return IdNumber;
     }
 
+    /**
+     * To String method using super class
+     * @return The super toString and ID and GPA score.
+     */
     @Override
     public String toString() {
         return (super.toString()

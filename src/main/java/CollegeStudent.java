@@ -56,8 +56,12 @@ public class CollegeStudent extends Student{
      * Returns Freshmen or Sophomore.
      * @return 1 for freshmen 2 for sophomore.
      */
-    public int getYear() {
-        return year;
+    public String getYear() {
+        return switch (year) {
+            case 1 -> "Freshmen";
+            case 2 -> "Sophomore";
+            default -> "unknown Year";
+        };
     }
 
     /**

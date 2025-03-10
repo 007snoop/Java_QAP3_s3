@@ -88,6 +88,10 @@ public class Person {
      * @return The gender of Person.
      */
     public String getGender() {
-        return gender;
+        return switch (gender) {
+            case "F" -> "Female";
+            case "M" -> "Male";
+            default -> "n/a";
+        };
     }
 }

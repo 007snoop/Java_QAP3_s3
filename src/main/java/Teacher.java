@@ -21,6 +21,15 @@ public class Teacher extends Person{
     }
 
     /**
+     * No Parameter Teacher constructor.
+     */
+    public Teacher() {
+        super();
+        this.subject = "none";
+        this.salary = 0.00;
+    }
+
+    /**
      * Sets the teachers salary.
      * @param salary The salary of Teacher as double.
      */
@@ -50,5 +59,12 @@ public class Teacher extends Person{
      */
     public String getSubject() {
         return subject;
+    }
+
+    @Override
+    public String toString() {
+        return (super.toString()
+                + "\nSubject: " + getSubject()
+                + "\nSalary: " + getSalary());
     }
 }

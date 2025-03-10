@@ -7,7 +7,7 @@ public class Person {
     protected String gender;
 
     /**
-     * The Person constructor.
+     * The Parameterized Person constructor.
      *
      * @param name The persons name.
      * @param age The persons age.
@@ -20,14 +20,24 @@ public class Person {
     }
 
     /**
+     * The No Parameter Person constructor/
+     */
+    public Person() {
+        this.name = "undefined";
+        this.age = 0;
+        this.gender = "n/a";
+    }
+
+
+    /**
      * Method to output constructor to string.
      * @return The Name, Age, and Gender of person.
      */
     @Override
     public String toString() {
-        return "\nName: " + name
-                + "\nAge: " + age
-                + "\nGender: " + gender;
+        return "\nName: " + getName()
+                + "\nAge: " + getAge()
+                + "\nGender: " + getGender();
     }
 
     /**

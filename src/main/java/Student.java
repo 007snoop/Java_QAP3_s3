@@ -52,4 +52,11 @@ public class Student extends Person{
     public String getIdNumber() {
         return IdNumber;
     }
+
+    @Override
+    public String toString() {
+        return (super.toString()
+        + "\nStudent ID: " + getIdNumber()
+        + "\nStudent GPA Score: " + getGpa());
+    }
 }

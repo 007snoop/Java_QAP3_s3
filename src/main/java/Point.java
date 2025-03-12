@@ -3,8 +3,8 @@
  */
 
 public class Point {
-    protected float x = 0.0f;
-    protected float y = 0.0f;
+    protected float x;
+    protected float y;
 
     /**
      * Point constructor using 2 floats.
@@ -20,8 +20,7 @@ public class Point {
      * No argument constructor.
      */
     public Point() {
-        float x;
-        float y;
+        this(0.0f, 0.0f);
     }
 
 
@@ -58,15 +57,30 @@ public class Point {
         this.y = y;
     }
 
+
+    /**
+     * Sets both X and Y values of point.
+     * @param x X value of point.
+     * @param y Y value of point.
+     */
     public void setXY(float x, float y) {
         this.x = x;
         this.y = y;
     }
 
+    /**
+     * Float object array.
+     * @return New Float object with parameters X, Y.
+     */
     public float[] getXY() {
         return new float[]{x,y};
     }
 
+    /**
+     * Overrides the toString default method java implements.
+     * @return "X: {X}"
+     *         "Y: {Y}"
+     */
     @Override
     public String toString() {
         return "\nX: " + getX()

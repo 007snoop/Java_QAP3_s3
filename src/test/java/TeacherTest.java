@@ -6,6 +6,7 @@ public class TeacherTest {
         System.out.println("Teacher Name: " + teacher.getName());
         System.out.println("Subject: " + teacher.getSubject());
 
+
         System.out.println("Salary Before update: " + teacher.getSalary());
 
         teacher.setSalary(125000.00);

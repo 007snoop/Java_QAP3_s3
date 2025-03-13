@@ -6,6 +6,7 @@ public class MainTest {
         Student lynne = new Student("Lynne Brooke", 16, "F", "HS95129", 3.5);
         System.out.println(lynne);
 
+
         Teacher mrJava = new Teacher("Duke Java", 34, "M", "Computer Science", 50000);
         System.out.println(mrJava);
 

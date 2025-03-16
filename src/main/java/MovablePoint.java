@@ -81,8 +81,7 @@ public class MovablePoint extends Point{
      */
     public String toString() {
         return "\nX speed: " + getxSpeed()
-                + "\nY speed: " + getySpeed()
-                + "\nTotal speed: " ;
+                + "\nY speed: " + getySpeed();
     }
 
     /**

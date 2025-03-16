@@ -1,5 +1,7 @@
-# Clean up commit faf0acb29a5638bdba567ada26b579892b10335a
+# QAP 3 Java
 
-- Removed files from main
-- refactor files into respective branchs
-- add readme to main branch
+## Branch rubric
+- Problem#1 - all code and screenshot of running code.
+- Problem#2 - all code and screenshot of running code.
+- Problem#3 - all code and screenshot of running code.
+- Problem#4 - all code and screenshot of running code.
